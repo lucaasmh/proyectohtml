@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /imagenes-privadas/
+Allow: /
+Sitemap: https://lucaasmh.github.io/proyectohtml/
