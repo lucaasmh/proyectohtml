@@ -1,0 +1,117 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; padding: 0; 
+    background-color: #f0f0f0; 
+}
+#cabecera { 
+    background-color: #d32f2f; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+#menu {
+    background-color: #333; 
+    color: white; 
+}
+#menu ul { 
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    text-align: center; 
+}
+#menu li { 
+    display: inline-block; 
+    position: relative; 
+    z-index: 2000; 
+}
+#menu a { 
+    display: block; 
+    padding: 15px 20px; 
+    color: white; 
+    text-decoration: none; 
+}
+#menu a:hover { 
+    background-color: #555; 
+}
+#menu ul ul { 
+    display: none; 
+    position: absolute; 
+    background-color: #444; 
+    top: 100%; 
+    left: 0; 
+    min-width: 150px; 
+}
+#menu ul ul li { 
+    display: block; 
+    border-bottom: 1px solid #555; 
+}
+#menu li:hover ul { 
+    display: block; 
+}
+#contenido { 
+    width: 90%; 
+    margin: 20px auto; 
+    background-color: white; 
+    padding: 20px; 
+    min-height: 400px; 
+}
+.pie { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+}
+.tarjeta{
+   box-sizing: border-box; 
+   text-align: center;
+}
+.animaciones{
+    color: #d32f2f;
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px;
+}
+.cielo {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #87CEEB, #e0f6ff); 
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+.avion {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    animation: volar 10s linear infinite; 
+}
+.nube {
+    position: absolute;
+    opacity: 0.8;
+}
+.nube1 {
+    top: 20px;
+    animation: moverNube 15s linear infinite;
+}
+.nube2 {
+    top: 80px;
+    animation: moverNube 25s linear infinite reverse;
+}
+.avion img {
+    width: 80px;  
+    height: auto;
+}
+.nube img {
+    width: 120px; 
+    height: auto;
+}
+@keyframes volar {
+    0%   { left: -10%; transform: translateY(0) rotate(15deg); }
+    50%  { transform: translateY(-30px) rotate(0deg); } 
+    100% { left: 110%; transform: translateY(0) rotate(15deg); }
+}
+@keyframes moverNube {
+    0%   { left: -10%; }
+    100% { left: 110%; }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Contacta con TRAVELSPAIN. Rellena nuestro formulario para enviarnos tus dudas, sugerencias o contarnos cuál es tu ciudad y destino favorito de España.">
+<meta name="keywords" content="contacto TRAVELSPAIN, formulario de contacto, atención al cliente, dudas turismo, contactar web viajes">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="cabecera"><h1>Turismo en España</h1></div>
+
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Ciudades </a>
+                <ul> 
+                    <li><a href="madrid.html">Madrid</a></li>
+                    <li><a href="barcelona.html">Barcelona</a></li>
+                    <li><a href="sevilla.html">Sevilla</a></li>
+                    <li><a href="valencia.html">Valencia</a></li>
+                    <li><a href="bilbao.html">Bilbao</a></li>
+                    <li><a href="granada.html">Granada</a></li>
+                </ul>
+            </li>
+            <li><a href="extra.html">Extras</a></li>
+            <li><a href="mapa.html">Mapa Web</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            
+        </ul>
+    </div>
+
+    <div id="contenido">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Email: <input type="text" name="email"></p>
+
+            <p>Ciudad favorita:
+                <select name="ciudad">
+                    <option>Madrid</option>
+                    <option>Barcelona</option>
+                    <option>Sevilla</option>
+                    <option>Valencia</option>
+                    <option>Bilbao</option>
+                    <option>Granada</option>
+                </select>
+            </p>
+            <p>Mensaje:<br>
+            <textarea name="mensaje" rows="4" cols="30"></textarea></p>
+            <p>Género:<br>
+                <input type="radio" name="sexo" value="h"> Hombre
+                <input type="radio" name="sexo" value="m"> Mujer
+                <input type="radio" name="sexo" value="o"> Otro
+            </p>
+
+            <p>Intereses:<br>
+                <input type="checkbox" name="int1"> Playa
+                <input type="checkbox" name="int2"> Montaña
+                <input type="checkbox" name="int3"> Cultura
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </div>
+
+    <div class="pie"><p>Proyecto Final LM - 2026</p></div>
+</body>
+</html>
